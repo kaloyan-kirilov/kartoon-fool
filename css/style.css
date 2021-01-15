@@ -1417,9 +1417,7 @@ body {
     position: absolute;
     bottom: 0;
     opacity: 0;
-    background: url('../img/twitter-hover.svg'),
-
-                url('../img/arrow-prev-hover.png'),
+    background: url('../img/arrow-prev-hover.png'),
                 url('../img/arrow-next-hover.png'),
 
                 url('../img/close-modal.png'),
