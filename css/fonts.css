@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Ranchers-Regular";
+    src: url("../fonts/Ranchers-Regular.woff") format("woff"),
+        url("../fonts/Ranchers-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Peralta-Regular";
+    src: url("../fonts/Peralta-Regular.woff") format("woff"),
+        url("../fonts/Peralta-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoModerno-Medium";
+    src: url("../fonts/MuseoModerno-Medium.woff") format("woff"),
+        url("../fonts/MuseoModerno-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BreeSerif-Regular";  
+    src: url("../fonts/BreeSerif-Regular.woff") format("woff"),
+        url("../fonts/BreeSerif-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Material Icons";
+    src: url("../fonts/MaterialIcons-Regular.woff") format("woff"),
+        url("../fonts/MaterialIcons-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
