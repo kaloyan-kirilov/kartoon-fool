@@ -142,6 +142,13 @@ body {
     margin-left: 5px;
 }
 
+#twitter-hover {
+    height: 0;
+    width: 0;
+    background-image: url('../img/twitter-hover.svg');
+    opacity: 0;
+}
+
 #twitter:hover {
     background-image: url('../img/twitter-hover.svg');
     background-color: #1f364d;
