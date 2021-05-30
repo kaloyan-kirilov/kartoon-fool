@@ -460,30 +460,12 @@ function checkTransition(next_modal, prev_modal) {
     }
 }
 
-// Preload Modal Images
-const preloadModal = document.getElementById('preload-modal-img');
-
-function preloadModal_img(img1, img2, img3, img4, img5, img6, img7, img8, img9) {
-    preloadModal.style.background =
-   `url('../img/gallery/full/${artArray[img1].full}'),
-    url('../img/gallery/full/${artArray[img2].full}'),
-    url('../img/gallery/full/${artArray[img3].full}'),
-    url('../img/gallery/full/${artArray[img4].full}'),
-    url('../img/gallery/full/${artArray[img5].full}'),
-    url('../img/gallery/full/${artArray[img6].full}'),
-    url('../img/gallery/full/${artArray[img7].full}'),
-    url('../img/gallery/full/${artArray[img8].full}'),
-    url('../img/gallery/full/${artArray[img9].full}')`;
-}
-
 // Gallery - PAGE 1
 function page_1() {
     navigation_page = 1;
     pageNumber.innerHTML = '1';
 
     currentPage();
-
-    preloadModal_img(0, 1, 2, 3, 4, 5, 6, 7, 8);
 
     thumbnail_1.style.backgroundImage = `url('../img/gallery/thumb/${artArray[0].thumb}')`;
     thumbnail_2.style.backgroundImage = `url('../img/gallery/thumb/${artArray[1].thumb}')`;
@@ -564,8 +546,6 @@ function page_2() {
     pageNumber.innerHTML = '2';
 
     currentPage();
-
-    preloadModal_img(8, 9, 10, 11, 12, 13, 14, 15, 16);
     
     thumbnail_1.style.backgroundImage = `url('../img/gallery/thumb/${artArray[8].thumb}')`;
     thumbnail_2.style.backgroundImage = `url('../img/gallery/thumb/${artArray[9].thumb}')`;
@@ -647,8 +627,6 @@ function page_3() {
     pageNumber.innerHTML = '3';
 
     currentPage();
-
-    preloadModal_img(16, 17, 18, 19, 20, 21, 22, 23, 24);
     
     thumbnail_1.style.backgroundImage = `url('../img/gallery/thumb/${artArray[16].thumb}')`;
     thumbnail_2.style.backgroundImage = `url('../img/gallery/thumb/${artArray[17].thumb}')`;
@@ -730,8 +708,6 @@ function page_4() {
     pageNumber.innerHTML = '4';
 
     currentPage();
-
-    preloadModal_img(24, 25, 26, 27, 28, 29, 30, 31, 32);
     
     thumbnail_1.style.backgroundImage = `url('../img/gallery/thumb/${artArray[24].thumb}')`;
     thumbnail_2.style.backgroundImage = `url('../img/gallery/thumb/${artArray[25].thumb}')`;
@@ -813,8 +789,6 @@ function page_5() {
     pageNumber.innerHTML = '5';
 
     currentPage();
-
-    preloadModal_img(32, 33, 34, 35, 36, 37, 38, 39, 40);
     
     thumbnail_1.style.backgroundImage = `url('../img/gallery/thumb/${artArray[32].thumb}')`;
     thumbnail_2.style.backgroundImage = `url('../img/gallery/thumb/${artArray[33].thumb}')`;
@@ -897,11 +871,6 @@ function page_6() {
 
     currentPage();
 
-    // Empty Gallery Slot = 43!
-    preloadModal_img(40, 41, 42, 43, 43, 43, 43, 43, 43);
-    // Add New Art in Artwork Source Object - Code Line: 42!
-    // Also Preload New Thumbnails in CSS file!
-
     thumbnail_1.style.backgroundImage = `url('../img/gallery/thumb/${artArray[40].thumb}')`;
     thumbnail_2.style.backgroundImage = `url('../img/gallery/thumb/${artArray[41].thumb}')`;
     thumbnail_3.style.backgroundImage = `url('../img/gallery/thumb/${artArray[42].thumb}')`;
@@ -911,7 +880,9 @@ function page_6() {
     thumbnail_7.style.backgroundImage = null;  // `url('../img/gallery/thumb/${artArray[46].thumb}')`;
     thumbnail_8.style.backgroundImage = null;  // `url('../img/gallery/thumb/${artArray[47].thumb}')`;
 
-    // Update Empty Thumbnails in Gallery Page Navigation Function - Code line: 272!
+    // 1. Add New Art in Artwork Source Object - Code Line: 42!
+    // 2. Preload New Thumbnail and Full Modal Image in CSS file!
+    // 3. Update Empty Thumbnails in Gallery Page Navigation Function - Code line: 272!
 
     const modals = {
         modal_1: function () {

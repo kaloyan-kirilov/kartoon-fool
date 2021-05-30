@@ -1451,7 +1451,7 @@ body {
 }
 
 /* ---------- IMAGE PRELOAD ---------- */
-#preload-thumb-img {
+#image-preload {
     height: 1px;
     width: 100%;
     position: absolute;
@@ -1463,7 +1463,7 @@ body {
                 url('../img/close-modal.png'),
                 url('../img/close-modal-hover.png'),
 
-                /* Thumbnail Preload Starts from Gallery Page 2 */
+                /* Thumbnail Preload - Starts from Gallery Page 2 */
                 url('../img/gallery/thumb/35_rick-thumb.jpg'),
                 url('../img/gallery/thumb/34_kodi-thumb.jpg'),
                 url('../img/gallery/thumb/33_snail-thumb.jpg'),
@@ -1499,17 +1499,52 @@ body {
                 url('../img/gallery/thumb/03_walrus-thumb.jpg'),
                 url('../img/gallery/thumb/02_radioactive-thumb.jpg'),
                 url('../img/gallery/thumb/01_duck-thumb.jpg'),
-                url('../img/gallery/thumb/empty-thumb-hover.jpg');
+                url('../img/gallery/thumb/empty-thumb-hover.jpg'),
+
+                /* Full Modal Image Preload */
+                url('../img/gallery/full/43_goat-full.jpg'),
+                url('../img/gallery/full/42_diamond-full.jpg'),
+                url('../img/gallery/full/41_corona-full.jpg'),
+                url('../img/gallery/full/40_grinch-full.jpg'),
+                url('../img/gallery/full/39_rabbit-full.jpg'),
+                url('../img/gallery/full/38_walk-full.gif'),
+                url('../img/gallery/full/37_kaiju-full.jpg'),
+                url('../img/gallery/full/36_silhouette-full.jpg'),
+                url('../img/gallery/full/35_rick-full.jpg'),
+                url('../img/gallery/full/34_kodi-full.jpg'),
+                url('../img/gallery/full/33_snail-full.jpg'),
+                url('../img/gallery/full/32_screwball-full.jpg'),
+                url('../img/gallery/full/31_scientist-full.jpg'),
+                url('../img/gallery/full/30_sheep-full.jpg'),
+                url('../img/gallery/full/29_rooster-full.jpg'),
+                url('../img/gallery/full/28_kooky-full.jpg'),
+                url('../img/gallery/full/27_toot-full.jpg'),
+                url('../img/gallery/full/26_hanna-full.jpg'),
+                url('../img/gallery/full/25_ed-full.jpg'),
+                url('../img/gallery/full/24_spidey-full.jpg'),
+                url('../img/gallery/full/23_nutty-full.jpg'),
+                url('../img/gallery/full/22_snowflake-full.jpg'),
+                url('../img/gallery/full/21_trick-full.jpg'),
+                url('../img/gallery/full/20_sheriff-full.jpg'),
+                url('../img/gallery/full/19_wolf-full.jpg'),
+                url('../img/gallery/full/18_grylls-full.jpg'),
+                url('../img/gallery/full/17_beaver-full.jpg'),
+                url('../img/gallery/full/16_selfish-full.jpg'),
+                url('../img/gallery/full/15_lazy-full.jpg'),
+                url('../img/gallery/full/14_wacky-full.jpg'),
+                url('../img/gallery/full/13_fred-full.jpg'),
+                url('../img/gallery/full/12_dila-full.jpg'),
+                url('../img/gallery/full/11_carrot-full.jpg'),
+                url('../img/gallery/full/10_forest-full.jpg'),
+                url('../img/gallery/full/09_raccoon-full.jpg'),
+                url('../img/gallery/full/08_lion-full.jpg'),
+                url('../img/gallery/full/07_genius-full.jpg'),
+                url('../img/gallery/full/06_fox-full.jpg'),
+                url('../img/gallery/full/05_frog-full.jpg'),
+                url('../img/gallery/full/04_fishing-full.jpg'),
+                url('../img/gallery/full/03_walrus-full.jpg'),
+                url('../img/gallery/full/02_radioactive-full.jpg'),
+                url('../img/gallery/full/01_duck-full.jpg');
 
     background-repeat: no-repeat;
-}
-
-/* Preload Modal Images from JS file */
-#preload-modal-img {
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-/*  background: url('JavaScript'); */
 }
