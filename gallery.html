@@ -11,19 +11,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/kartoon-favicon.png">
-    <link rel="preload" as="image" href="img/bg-stripes.png">
-    <link rel="preload" as="image" href="img/container-shadow-1024.png">
-    <link rel="preload" as="image" href="img/container-shadow-824.png">
-    <link rel="preload" as="image" href="img/header-img.png">
-    <link rel="preload" as="image" href="img/deviantart.svg">
-    <link rel="preload" as="image" href="img/twitter.svg">
-    <link rel="preload" as="image" href="img/content-texture.jpg">
     <link rel="preload" as="font" href="fonts/Ranchers-Regular.woff" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="fonts/Peralta-Regular.woff" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="fonts/MuseoModerno-Medium.woff" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="fonts/BreeSerif-Regular.woff" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="fonts/MaterialIcons-Regular.woff" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <title>Kartoon Fool - Gallery</title>
 </head>
 <body>
@@ -47,45 +40,45 @@
                 <p class="title">Gallery</p>
                 <div id="gallery">
                     <div class="thumbnail-row">
-                        <div id="thumb-one" class="thumbnail"><div class="hover-overlay"></div></div>
-                        <div id="thumb-two" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-1" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-2" class="thumbnail"><div class="hover-overlay"></div></div>
                         <div id="responsive-break"></div>
-                        <div id="thumb-three" class="thumbnail"><div class="hover-overlay"></div></div>
-                        <div id="thumb-four" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-3" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-4" class="thumbnail"><div class="hover-overlay"></div></div>
                     </div> 
                     <div id="row-break"></div>
                     <div class="thumbnail-row">
-                        <div id="thumb-five" class="thumbnail"><div class="hover-overlay"></div></div>
-                        <div id="thumb-six" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-5" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-6" class="thumbnail"><div class="hover-overlay"></div></div>
                         <div id="responsive-break"></div>
-                        <div id="thumb-seven" class="thumbnail"><div class="hover-overlay"></div></div>
-                        <div id="thumb-eight" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-7" class="thumbnail"><div class="hover-overlay"></div></div>
+                        <div id="thumb-8" class="thumbnail"><div class="hover-overlay"></div></div>
                     </div>
                     <div id="row-break"></div>
-                    <div id="gallery-page">
-                        <div id="arrow-prev" class="arrow-btn"></div>
-                        <div id="page-one" class="page-btn">1</div>
-                        <div id="page-two" class="page-btn">2</div>
-                        <div id="page-three" class="page-btn">3</div>
-                        <div id="page-four" class="page-btn">4</div>
-                        <div id="page-five" class="page-btn">5</div>
-                        <div id="page-six" class="page-btn">6</div>
-                        <div id="arrow-next" class="arrow-btn"></div>
+                    <div id="page-navigation">
+                        <div class="prev-button arrow-btn"></div>
+                        <div id="page-1" class="page-btn">1</div>
+                        <div id="page-2" class="page-btn">2</div>
+                        <div id="page-3" class="page-btn">3</div>
+                        <div id="page-4" class="page-btn">4</div>
+                        <div id="page-5" class="page-btn">5</div>
+                        <div id="page-6" class="page-btn">6</div>
+                        <div class="next-button arrow-btn"></div>
                     </div>
-                    <div id="responsive-page">
-                        <div id="res-arrow-prev" class="arrow-btn"></div>
+                    <div id="responsive-nav">
+                        <div class="prev-button arrow-btn"></div>
                         <div id="page-number" class="page-btn current-page"></div>
-                        <div id="res-arrow-next" class="arrow-btn"></div>
+                        <div class="next-button arrow-btn"></div>
                     </div>
                     <div id="gallery-modal">
                         <div id="modal-container">
-                            <div id="modal-header"><div id="title-bg"><p id="header-title"></p></div></div>
-                            <div id="modal-img"></div>
+                            <div id="modal-header"><div id="title-bg"><p id="image-title-res"></p></div></div>
+                            <div id="modal-image"></div>
                             <div id="modal-nav">
-                                <div id="modal-prev"></div>
-                                <div id="modal-title"><p id="img-title"></p></div>
-                                <div id="modal-close"></div>
-                                <div id="modal-next"></div>
+                                <div id="prev-modal"></div>
+                                <div id="modal-title"><p id="image-title"></p></div>
+                                <div id="close-modal"></div>
+                                <div id="next-modal"></div>
                             </div>
                         </div>
                     </div>
@@ -96,8 +89,9 @@
             <div id="kartoon-fool"><span id="copyright">&copy;</span>2020-21 Kartoon Fool.</div>
             <div id="web-dev">Web design & development by&nbsp;<a id="kaloyan-kirilov" href="https://kaloyan-kirilov.github.io/" target="_blank">Kaloyan Kirilov</a>.</div>
         </footer>
-        <div id="img-preload"></div>
+        <div id="preload-thumb-img"></div>
+        <div id="preload-modal-img"></div>
     </div>
-    <script src="js/gallery.min.js"></script>
+    <script src="js/gallery-min.js"></script>
 </body>
 </html>
